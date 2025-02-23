@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rose Toy Vibrator - Personal Pleasure & Intimacy</title>
     <meta name="description" content="Experience pure bliss with our premium Rose Toy Vibrator. Features 10 quiet modes, waterproof design, and safe silicone material.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-in;
+        }
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -17,16 +40,37 @@
     <!-- Header -->
     <header class="sticky top-0 bg-white shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="text-2xl font-bold text-pink-600">RoseToy</div>
+            <a href="https://Azagentfritz.github.io/rose-toy-vibrator-2025-02-23-d45y2" class="text-2xl font-bold text-pink-600 hover:text-pink-700 transition-colors duration-300">RoseToy</a>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6">
                 <a href="#features" class="hover:text-pink-600 transition-colors duration-300">Features</a>
                 <a href="#benefits" class="hover:text-pink-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="hover:text-pink-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="hover:text-pink-600 transition-colors duration-300">About</a>
                 <a href="#faq" class="hover:text-pink-600 transition-colors duration-300">FAQ</a>
             </div>
-            <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Shop Now Button -->
+            <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 hidden md:block">
                 Shop Now
             </button>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white w-full border-t border-gray-200">
+            <a href="#features" class="block px-4 py-2 hover:bg-pink-50">Features</a>
+            <a href="#benefits" class="block px-4 py-2 hover:bg-pink-50">Benefits</a>
+            <a href="#testimonials" class="block px-4 py-2 hover:bg-pink-50">Testimonials</a>
+            <a href="#about" class="block px-4 py-2 hover:bg-pink-50">About</a>
+            <a href="#faq" class="block px-4 py-2 hover:bg-pink-50">FAQ</a>
+            <a href="#" class="block px-4 py-2 text-pink-600 hover:bg-pink-50">Shop Now</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -35,9 +79,9 @@
         <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Elegant rose background" class="absolute inset-0 w-full h-full object-cover">
         <div class="relative z-20 h-full flex items-center justify-center text-center text-white">
             <div class="max-w-4xl px-4">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Rose Toy Vibrator</h1>
-                <p class="text-xl md:text-2xl mb-8">Discover Personal Pleasure & Intimacy</p>
-                <button class="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fadeIn">Rose Toy Vibrator</h1>
+                <p class="text-xl md:text-2xl mb-8 animate-fadeIn">Discover Personal Pleasure & Intimacy</p>
+                <button class="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 animate-fadeIn">
                     Experience Bliss Now
                 </button>
             </div>
@@ -55,7 +99,7 @@
                         <i class="fas fa-volume-off text-2xl text-pink-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">10 Quiet Modes</h3>
-                    <p class="text-gray-600">Experience variety with whisper-quiet operation for complete discretion.</p>
+                    <p class="text-gray-600">Experience variety with whisper-quiet operation for complete discretion. Each mode carefully designed for your comfort and pleasure.</p>
                 </div>
 
                 <!-- Feature 2 -->
@@ -64,7 +108,7 @@
                         <i class="fas fa-water text-2xl text-pink-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Waterproof & USB Rechargeable</h3>
-                    <p class="text-gray-600">Enjoy anywhere with waterproof design and convenient USB charging.</p>
+                    <p class="text-gray-600">IPX7 waterproof rating for versatile use. Quick 2-hour charging for up to 3 hours of continuous pleasure.</p>
                 </div>
 
                 <!-- Feature 3 -->
@@ -73,7 +117,7 @@
                         <i class="fas fa-check-circle text-2xl text-pink-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Safe Silicone</h3>
-                    <p class="text-gray-600">Premium body-safe silicone for your comfort and peace of mind.</p>
+                    <p class="text-gray-600">Medical-grade silicone ensures body-safe use. Hypoallergenic and easy to clean for your peace of mind.</p>
                 </div>
             </div>
         </div>
@@ -87,13 +131,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
                         <h3 class="text-3xl font-bold mb-6">Pure Bliss</h3>
-                        <p class="text-gray-600 mb-6">Experience ultimate satisfaction with our premium design and carefully crafted features.</p>
-                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300">
+                        <p class="text-gray-600 mb-6">Experience ultimate satisfaction with our premium design featuring advanced suction technology and precision-engineered stimulation patterns. Each vibration mode is carefully calibrated to provide intense pleasure while maintaining whisper-quiet operation.</p>
+                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
                             Learn More
                         </button>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Pure Bliss" class="rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Pure Bliss" class="rounded-lg shadow-lg hover-grow">
                     </div>
                 </div>
             </div>
@@ -104,12 +148,12 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Total Privacy" class="rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Total Privacy" class="rounded-lg shadow-lg hover-grow">
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold mb-6">Total Privacy</h3>
-                        <p class="text-gray-600 mb-6">Discreet shipping and whisper-quiet operation for your complete privacy.</p>
-                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300">
+                        <p class="text-gray-600 mb-6">Enjoy complete discretion with our unmarked packaging and ultra-quiet motor design. Our advanced noise-reduction technology ensures your intimate moments remain private, while our discreet shipping process guarantees confidentiality from order to delivery.</p>
+                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
                             Learn More
                         </button>
                     </div>
@@ -123,14 +167,75 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
                         <h3 class="text-3xl font-bold mb-6">Ultimate Control</h3>
-                        <p class="text-gray-600 mb-6">Customize your experience with 10 different modes and intuitive controls.</p>
-                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300">
+                        <p class="text-gray-600 mb-6">Take command of your pleasure with 10 expertly crafted vibration modes and intuitive touch controls. Our smart memory function remembers your preferred settings, while the ergonomic design ensures comfortable handling and precise stimulation control.</p>
+                        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
                             Learn More
                         </button>
                     </div>
                     <div class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Ultimate Control" class="rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Ultimate Control" class="rounded-lg shadow-lg hover-grow">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 bg-gradient-to-r from-pink-500 to-purple-600">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 container mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Experience Pleasure Today</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who have discovered their path to intimate pleasure.</p>
+            <button class="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                Shop Now with 20% Off
+            </button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">About Us</h2>
+            <p class="text-gray-600 mb-8">Founded in 2020, RoseToy emerged from a vision to revolutionize intimate wellness products. Our team of experts spent countless hours developing a product that combines innovative technology with elegant design, setting new standards in the industry.</p>
+            <p class="text-gray-600">Our mission is to empower individuals to explore their pleasure safely and confidently. We believe in creating products that prioritize quality, safety, and satisfaction, while maintaining the highest standards of discretion and customer care.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Customer Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-pink-600 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"The quiet operation and discreet packaging exceeded my expectations. Perfect for apartment living!"</p>
+                    <p class="font-semibold">Sarah M.</p>
+                    <p class="text-sm text-gray-500">Verified Buyer</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-pink-600 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"Amazing battery life and the waterproof feature makes cleanup so easy. The multiple modes are a game-changer!"</p>
+                    <p class="font-semibold">Jennifer K.</p>
+                    <p class="text-sm text-gray-500">Wellness Coach</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-pink-600 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"The customer service team was incredibly helpful and shipping was faster than expected."</p>
+                    <p class="font-semibold">Rachel B.</p>
+                    <p class="text-sm text-gray-500">Repeat Customer</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-pink-600 mb-4">★★★★★</div>
+                    <p class="text-gray-600 mb-4">"High-quality materials and construction. Worth every penny for the experience it provides."</p>
+                    <p class="font-semibold">Michelle T.</p>
+                    <p class="text-sm text-gray-500">Lifestyle Blogger</p>
                 </div>
             </div>
         </div>
@@ -142,19 +247,24 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
                 <!-- FAQ Item 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">How long does shipping take?</h3>
-                    <p class="text-gray-600">We offer fast worldwide shipping with delivery within 5 business days.</p>
+                    <p class="text-gray-600">We offer fast worldwide shipping with delivery within 5-7 business days. All orders are processed within 24 hours and shipped in discrete packaging.</p>
                 </div>
                 <!-- FAQ Item 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">What's your return policy?</h3>
-                    <p class="text-gray-600">We offer a 100% satisfaction guarantee with a full refund upon return.</p>
+                    <p class="text-gray-600">We offer a 30-day satisfaction guarantee with a hassle-free return process. If you're not completely satisfied, contact our customer service team for a full refund.</p>
                 </div>
                 <!-- FAQ Item 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">Is the product safe?</h3>
-                    <p class="text-gray-600">Yes, our product is made from body-safe silicone and is thoroughly tested.</p>
+                    <p class="text-gray-600">Yes, our product is made from medical-grade silicone and is FDA-approved. All materials are body-safe, hypoallergenic, and thoroughly tested for quality assurance.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How long does the battery last?</h3>
+                    <p class="text-gray-600">A full charge takes 2 hours and provides up to 3 hours of continuous use. The device includes a USB charging cable and battery indicator light.</p>
                 </div>
             </div>
         </div>
@@ -167,28 +277,31 @@
                 <div>
                     <h4 class="text-xl font-bold mb-4">Contact Us</h4>
                     <p class="mb-2">support@rosetoyshop.com</p>
+                    <p class="mb-2">1-800-ROSETOY</p>
+                    <p>Mon-Fri: 9AM-5PM EST</p>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Policies</h4>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-pink-400">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-pink-400">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-pink-400">Returns</a></li>
+                        <li><a href="https://Azagentfritz.github.io/rose-toy-vibrator-2025-02-23-d45y2/privacy.html" class="hover:text-pink-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Azagentfritz.github.io/rose-toy-vibrator-2025-02-23-d45y2/terms.html" class="hover:text-pink-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Azagentfritz.github.io/rose-toy-vibrator-2025-02-23-d45y2/blog.html" class="hover:text-pink-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors duration-300">Returns</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-pink-400"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-pink-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-pink-400 transition-colors duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-pink-400 transition-colors duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="hover:text-pink-400 transition-colors duration-300"><i class="fab fa-facebook text-2xl"></i></a>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-4">Newsletter</h4>
                     <form class="flex">
-                        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-full w-full text-gray-900">
-                        <button class="bg-pink-600 px-6 py-2 rounded-r-full hover:bg-pink-700 transition-colors duration-300">
+                        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-full w-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-600">
+                        <button class="bg-pink-600 px-6 py-2 rounded-r-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105">
                             Subscribe
                         </button>
                     </form>
@@ -199,5 +312,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
